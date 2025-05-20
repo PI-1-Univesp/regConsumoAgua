@@ -1,0 +1,74 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: Relatorio.aux
+Reallocating 'name_of_file' (item size: 1) to 18 items.
+A level-1 auxiliary file: pretextResumo.aux
+Reallocating 'name_of_file' (item size: 1) to 29 items.
+A level-1 auxiliary file: textual/chap1-Introducao.aux
+Reallocating 'name_of_file' (item size: 1) to 34 items.
+A level-1 auxiliary file: textual/chap2-Desenvolvimento.aux
+Reallocating 'name_of_file' (item size: 1) to 16 items.
+Reallocating 'name_of_file' (item size: 1) to 17 items.
+Reallocating 'name_of_file' (item size: 1) to 12 items.
+The style file: abntex2-alf.bst
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 9000 items.
+Database file #1: abntex2-options.bib
+Database file #2: RelatorioParcial.bib
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'glb_str_end' (item size: 4) to 20 items.
+Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
+Reallocating 'global_strs' (item size: 1) to 4000000 items.
++---------------------------------------------------------+
+| Estilo bibliográfico abntex2-alf.bst versão v-1.9.7           |
+| Em caso de dúvidas ou problemas com este estilo procure |
+| http://www.abntex.net.br/                               |
++---------------------------------------------------------+
+You've used 22 entries,
+            6714 wiz_defined-function locations,
+            1332 strings with 12270 characters,
+and the built_in function-call counts, 28351 in all, are:
+= -- 3510
+> -- 315
+< -- 776
++ -- 918
+- -- 100
+* -- 1628
+:= -- 3538
+add.period$ -- 103
+call.type$ -- 22
+change.case$ -- 126
+chr.to.int$ -- 47
+cite$ -- 19
+duplicate$ -- 3041
+empty$ -- 1265
+format.name$ -- 461
+if$ -- 5685
+int.to.chr$ -- 2
+int.to.str$ -- 0
+missing$ -- 369
+newline$ -- 107
+num.names$ -- 90
+pop$ -- 427
+preamble$ -- 1
+purify$ -- 68
+quote$ -- 0
+skip$ -- 3027
+stack$ -- 1
+substring$ -- 1172
+swap$ -- 1077
+text.length$ -- 11
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 122
+width$ -- 0
+write$ -- 323

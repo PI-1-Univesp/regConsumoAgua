@@ -1,0 +1,504 @@
+\ProvidesPackage{abntex2-univesp}
+
+%% Codificação
+\usepackage[utf8]{inputenc} % Codificação de entrada
+\usepackage[T1]{fontenc} % Codificação de saída
+
+%%Fontes
+% \usepackage[RMstyle={Text,Semibold},SSstyle={Text,Semibold},TTstyle={Text,Semibold},DefaultFeatures={Ligatures=Common}]{plex-otf} 
+\usepackage{times}
+% \renewcommand{\familydefault}{\sfdefault} % Seta fonte default
+% \rmfamily
+
+%%Outros pacotes
+\usepackage{array}                  %Padding de tabelas
+\usepackage{microtype} 				% para melhorias de justificação
+\usepackage[dvipsnames]{xcolor} 		% para cores
+\usepackage{graphicx} 			    % para imagens
+%% Tamanho e alinhamento das legendas
+\usepackage[singlelinecheck=false,justification=centering,font=small, labelfont=bf, textfont=normalfont]{caption}
+\graphicspath{{./img//}}            % Diretório das imagens
+\usepackage{booktabs,tabularx,rotating,colortbl}	% para tabelas
+\usepackage{mdframed} 				% para caixas de texto como na CIP do verso do título
+\usepackage{multicol}				% tabelas com colunas mescladas
+\usepackage{multirow}
+\usepackage{lettrine}				% letras capitulares
+\usepackage{xspace} 				% para nao precisar de espaços com {} depois de comandos
+									% como \LaTeX e abreviações criadas pelo usuário
+\usepackage{lipsum} 				% para texto de preenchimento de exemplo
+
+\usepackage{gensymb}                %símbolos
+
+\usepackage{smartdiagram}           % Diagramas inteligentes
+\usepackage{moresize}
+\usepackage{tikz}
+\usepackage[inkscapelatex=false]{svg}
+\usepackage{enumerate}
+\usepackage{enumitem}               %Ajustar recuo de listas enumeradas
+
+%%Fluxogramas
+    \usepackage{tikz}                 
+    \usetikzlibrary{shapes.geometric, arrows}
+    \usetikzlibrary{arrows.meta, positioning, fit}
+
+    \tikzstyle{flowbox} = [%
+        minimum width=3cm,%
+        minimum height=1cm,%
+        % Defining the text width will cause text to wrap
+        text width=3cm,%
+        text centered,%
+        draw=black,%
+    ]
+    \tikzstyle{startstop} = [%
+        flowbox,%
+        rectangle,%
+        rounded corners,%
+        fill=red!30%
+    ]
+    \tikzstyle{io} = [%
+        flowbox,%
+        trapezium,%
+        trapezium left angle=70,%
+        trapezium right angle=110,%
+        trapezium stretches=true,%
+        fill=blue!30%
+    ]
+    \tikzstyle{process} = [%
+        flowbox,%
+        rectangle,%
+        fill=orange!30%
+    ]
+    \tikzstyle{process2} = [%
+        process,% this is a variation on process, so start there
+        fill=green!30%
+    ]
+    \tikzstyle{arrow} = [%
+        thick,%
+        ->,%
+        >=stealth%
+    ]
+
+    \tikzstyle{decision} = [%
+        flowbox,%
+        diamond,%
+        fill=green!30%
+    ]
+
+    \tikzstyle{connector} = [
+        draw,%
+        -latex'%
+    ]
+    \tikzstyle{vecArrow} = [
+        thick, decoration={markings,mark=at position
+    1 with {\arrow[semithick]{open triangle 60}}},
+    double distance=1.4pt, shorten >= 5.5pt,
+    preaction = {decorate},
+    postaction = {draw,line width=1.4pt, white,shorten >= 4.5pt}]
+    \tikzstyle{innerWhite} = [
+        semithick, white,line width=1.4pt, shorten >= 4.5pt]
+
+    \tikzstyle{blockArrow} = [
+        thick, ->, >=open triangle 45
+    ]
+
+    \tikzstyle{blockDualArrow} = [
+        thick, <->, >=open triangle 45
+    ]
+
+
+
+
+% \tikzstyle{startstop} = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=red!30]
+% \tikzstyle{io} = [trapezium, trapezium left angle=70, trapezium right angle=110, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=blue!30]
+% \tikzstyle{process} = [rectangle, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=orange!30]
+% \tikzstyle{decision} = [diamond, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=green!30]
+% \tikzstyle{arrow} = [thick,->,>=stealth]
+
+
+\usepackage{ragged2e}
+\usepackage{indentfirst} % Indenta o primeiro parágrafo de cada seção.
+
+%%Espaçamento
+
+
+%%Citações
+    \usepackage[brazilian,hyperpageref]{backref}	 % Paginas com as citações na bibl
+
+    \usepackage[hyphenbreaks]{breakurl}
+    \usepackage[alf,abnt-emphasize=bf,abnt-repeated-author-omit=yes]{abntex2cite} 
+
+    \renewcommand{\backrefpagesname}{Citado na(s) página(s):~}
+    % Texto padrão antes do número das páginas
+    \renewcommand{\backref}{}
+    % Define os textos da citação
+    \renewcommand*{\backrefalt}[4]{
+        \ifcase #1 %
+            Nenhuma citação no texto.%
+        \or
+            Citado na página #2.%
+        \else
+            Citado #1 vezes nas páginas #2.%
+        \fi}%
+    % ---
+
+
+%%Hiperlinks
+    % \usepackage{hyperref}               
+    \hypersetup{hidelinks}
+    \urlstyle{same}
+
+
+%%Cabeçalho
+%% Cabeçalho padrao
+    \makepagestyle{abntheadings}
+    \makeevenhead{abntheadings}{\ABNTEXfontereduzida\thepage}{}{\ABNTEXfontereduzida\textit\leftmark}
+    \makeoddhead{abntheadings}{}{}{\ABNTEXfontereduzida\thepage}
+
+% Estilos
+%% Membros da banca
+    \newcommand{\membrobancaA}{}
+    \newcommand{\membrobancaB}{}
+    \newcommand{\membrobancaC}{}
+
+    \providecommand{\imprimirmembrobancaA}{}
+    \providecommand{\imprimirmembrobancaAinst}{}
+    \renewcommand{\membrobancaA}[2][\imprimirinstituicao]{\renewcommand{\imprimirmembrobancaA}{#2}\renewcommand{\imprimirmembrobancaAinst}{#1}}
+
+    \providecommand{\imprimirmembrobancaB}{}
+    \providecommand{\imprimirmembrobancaBinst}{}
+    \renewcommand{\membrobancaB}[2][\imprimirinstituicao]{\renewcommand{\imprimirmembrobancaB}{#2}\renewcommand{\imprimirmembrobancaBinst}{#1}}
+
+    \providecommand{\imprimirmembrobancaC}{}
+    \providecommand{\imprimirmembrobancaCinst}{}
+    \renewcommand{\membrobancaC}[2][\imprimirinstituicao]{\renewcommand{\imprimirmembrobancaC}{#2}\renewcommand{\imprimirmembrobancaCinst}{#1}}
+
+    \newcommand{\imprimirmeOrientadorinst}{\imprimirinstituicao}
+    \newcommand{\imprimirmeCoorientadorinst}{\imprimirinstituicao}
+
+    %% Natureza do trabalho
+    \providecommand{\imprimirnaturezatrabalho}{}
+    \newcommand{\naturezatrabalho}[1]{
+        \renewcommand{\imprimirnaturezatrabalho}{#1}
+    }
+
+%% Redefinir capa
+    \renewcommand{\imprimircapa}{
+        \begin{capa}
+            \begin{center}
+
+
+                \large{\textbf{\MakeUppercase\imprimirinstituicao}}\\
+                \vfill
+                \large{\imprimirautor}
+                \vfill
+                % \includegraphics[height=2.5cm, width=7.1cm]{logo_univesp}\par
+
+                % \vfill
+                \large{\textbf{\imprimirtitulo}}
+                \vfill
+                \begin{normalsize}
+                \imprimirlocal\\
+                \imprimirdata
+                \end{normalsize}
+            \end{center}
+        \end{capa}
+    }
+
+%% Redefinir folha de rosto
+    \renewcommand{\folhaderostocontent}{
+        \begin{center}
+            \large{\textbf{\MakeUppercase\imprimirinstituicao}}
+
+            \vspace*{\fill}
+
+            \large{\imprimirautor}
+
+            \vspace*{\fill}
+
+            \large{\textbf{\imprimirtitulo}}
+
+            \vspace*{\fill}
+            
+            \abntex@ifnotempty{\imprimirpreambulo}{
+                \hspace{.45\textwidth}
+                \SingleSpacing
+                \begin{flushright}
+                \begin{minipage}{.5\textwidth}
+                    
+                    % \begin{\SingleSpace}
+                    \begin{normalsize}
+                        \imprimirpreambulo
+                    \end{normalsize}
+                    % \end{\SingleSpace}
+                \end{minipage}
+            \end{flushright}
+            
+            }
+
+            \vspace*{\fill}
+
+            \abntex@ifnotempty{\imprimirorientador}{
+                \begin{center}
+                    \imprimirorientadorRotulo~\imprimirorientador\par
+                    \abntex@ifnotempty{\imprimircoorientador}{
+                        {\imprimircoorientadorRotulo~\imprimircoorientador}
+                    }
+                \end{center}
+            }
+
+            \vspace*{\fill}
+            \begin{normalsize}
+
+            \imprimirlocal\\
+            \imprimirdata
+            \end{normalsize}
+        \end{center}
+    }
+
+%% Definir folha de aprovação
+    \newcommand{\imprimirfolhadeaprovacao}{
+        \begin{folhadeaprovacao}
+            \begin{center}
+                \textbf{\MakeUppercase\imprimirinstituicao}
+
+                \vspace*{\fill}
+
+                \imprimirautor
+
+                \vspace*{\fill}
+
+                \textbf{\imprimirtitulo}
+
+                \vspace*{\fill}
+
+                \hspace{.45\textwidth}
+                \begin{minipage}{.5\textwidth}
+                    \begin{scriptsize}
+                        \begin{SingleSpace}
+                            \imprimirnaturezatrabalho
+                        \end{SingleSpace}
+                    \end{scriptsize}	
+                    
+                \end{minipage}
+
+                \vspace*{\fill}
+
+                \imprimirlocal, \today
+
+                \vspace*{\fill}
+
+                \abntex@ifnotempty{\imprimirmembrobancaA}{
+                    \assinatura{\imprimirmembrobancaA \par \imprimirmembrobancaAinst}
+                }
+                \abntex@ifnotempty{\imprimirmembrobancaB}{
+                    \assinatura{\imprimirmembrobancaB \par \imprimirmembrobancaBinst}
+                }
+                \abntex@ifnotempty{\imprimirmembrobancaC}{
+                    \assinatura{\imprimirmembrobancaC \par \imprimirmembrobancaCinst}
+                }
+            \end{center}
+        \end{folhadeaprovacao}
+    }
+
+%% Redefinir dedicatória
+    \renewenvironment{dedicatoria}[1][]
+    {
+            \ifthenelse{\equal{#1}{}}{
+                    \PRIVATEbookmarkthis{\dedicatorianame}
+            }{\preamblealchapter{#1}}
+
+            \vspace*{\fill}
+
+        \begin{flushright}
+            \hbox{}\vfill
+            \begin{minipage}{.5\textwidth}
+                                    \setlength\parindent{0pt}
+                                    \setlength\parskip{12pt}
+    }
+    {
+                    \end{minipage}
+            \end{flushright}
+    }
+
+\renewenvironment{epigrafe}[1][]
+    {
+            \ifthenelse{\equal{#1}{}}{
+                    \PRIVATEbookmarkthis{\epigraphname}
+            }{\pretextualchapter{#1}}
+
+            \vspace*{\fill}
+    }
+
+
+%% Comando para inserir sigla
+    \newcommand{\sigla}[2][]{
+        \item[#1] \textit{#2}
+    }
+    
+
+
+%% Redefinição da formatação do \chapter
+    \renewcommand{\ABNTEXchapterfont}{\MakeUppercase\normalfont\fontseries{b}\selectfont}
+    \renewcommand{\ABNTEXchapterfontsize}{\normalsize}
+    \renewcommand{\ABNTEXpartfont}{\fontseries{b}\selectfont\selectfont}
+    \renewcommand{\ABNTEXpartfontsize}{\normalsize}
+    \renewcommand{\ABNTEXsectionfont}{\normalfont}
+    \renewcommand{\ABNTEXsectionfontsize}{\normalsize}
+    \renewcommand{\ABNTEXsubsectionfont}{\normalfont}%\fontseries{b}\selectfont}
+    \renewcommand{\ABNTEXsubsectionfontsize}{\normalsize}
+    \renewcommand{\ABNTEXsubsubsectionfont}{\normalfont\selectfont}
+    \renewcommand{\ABNTEXsubsubsectionfontsize}{\normalsize}
+    \renewcommand{\ABNTEXsubsubsubsectionfont}{\normalfont\itshape\selectfont}
+    \renewcommand{\ABNTEXsubsubsubsectionfontsize}{\normalsize}
+    \setlength\afterchapskip{\parskip}
+
+
+
+
+%%Seções em arábicos
+    % \renewcommand\thesection{\arabic{section}}
+
+
+
+
+%% Redefinição da formatação de Parágrafos 
+    \setlength{\parindent}{1cm}
+    \setlength{\parskip}{0cm}
+
+%% Sumário
+    % \usepackage{tocloft}
+    % % \renewcommand*{\cftsectionfont}{\normalfont}
+    % \renewcommand*{\cftsubsubsectionfont}{\normalfont}
+    % \renewcommand*{\cftparagraphfont}{\normalfont\itshape}
+
+%% Páginas em formato paisagem
+    \usepackage{pdflscape}
+
+    \usepackage{afterpage}
+
+    % Redefinição do cabeçalho e rodapé para páginas em paisagem
+    % \fancypagestyle{landscape}{
+    %     \fancyhf{}
+    %     \renewcommand{\headrulewidth}{0pt}
+    %     \newcommand{\headfont}{\fontsize{8}{9}\selectfont}
+    %     \fancyhead[L]{
+    %         \rotatebox{90}{
+    %             \mbox{\makecell[cl]{
+    %                 \includegraphics[height=35pt]{img/logo_univesp.png}
+    %             }}
+    %         }
+    %     }
+    %     \fancyhead[R]{
+    %         \rotatebox{90}{
+    %             \mbox{\makecell[cl]{
+    %                 \includegraphics[height=35pt]{img/logoPI.png}
+    %             }}
+    %         }
+    %     }
+    %     \fancyfoot[R]{\rotatebox{90}{\headfont\thepage}}
+    % }
+    
+    % Comando para aplicar o estilo landscape em páginas em paisagem
+    \newcommand{\applyLandscapeStyle}{
+        \afterpage{%
+            \global\let\ps@headings\ps@landscape%
+            \global\let\ps@fancy\ps@landscape%
+        }
+    }
+
+%%Cardinais em português º e ª
+\newcommand{\ele}{\raise1ex\hbox{\underbar{\scriptsize o}}}
+\newcommand{\ela}{\raise1ex\hbox{\underbar{\scriptsize a}}}
+
+%% Tornar a entrada "Referências" com fonte em maiúscula
+    \addto\captionsbrazil{
+        \renewcommand{\bibname}{REFER\^ENCIAS}
+    }
+
+% Legendas
+\makeatletter
+\patchcmd{\caption@@@make}
+  {\ifcaption@star}
+    {\ifcaption@star\small}
+    {}{}
+\makeatother
+
+\setcounter{secnumdepth}{1}
+
+% Listagens de programas
+
+\usepackage[scaled]{beramono}
+\usepackage{color}
+\usepackage{listings}
+%\usepackage{courier} %caused problems for me
+
+\lstloadlanguages{% Check Dokumentation for further languages ...
+C,
+C++,
+csh,
+Java
+}
+
+\definecolor{red}{rgb}{0.6,0,0} % for strings
+\definecolor{blue}{rgb}{0,0,0.6}
+\definecolor{green}{rgb}{0,0.8,0}
+\definecolor{cyan}{rgb}{0.0,0.6,0.6}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstset{
+language=csh,
+basicstyle=\fontfamily{fvm}\selectfont\scriptsize, 
+numbers=left, 
+numberstyle=\tiny, 
+numbersep=5pt, 
+aboveskip=25pt,
+tabsize=1, 
+extendedchars=true, 
+breaklines=true, 
+frame=b,
+stringstyle=\color{blue}\ttfamily, 
+showspaces=false, 
+showtabs=true, 
+xleftmargin=17pt,
+framexleftmargin=17pt,
+framexrightmargin=5pt,
+framexbottommargin=4pt,
+commentstyle=\color{green},
+morecomment=[l]{//}, %use comment-line-style!
+morecomment=[s]{/*}{*/}, %for multiline comments
+showstringspaces=false, 
+morekeywords={  abstract, event, new, struct,
+                as, explicit, null, switch,
+                base, extern, object, this,
+                bool, false, operator, throw,
+                break, finally, out, true,
+                byte, fixed, override, try,
+                case, float, params, typeof,
+                catch, for, private, uint,
+                char, foreach, protected, ulong,
+                checked, goto, public, unchecked,
+                class, if, readonly, unsafe,
+                const, implicit, ref, ushort,
+                continue, in, return, using,
+                decimal, int, sbyte, virtual,
+                default, interface, sealed, volatile,
+                delegate, internal, short, void,
+                do, is, sizeof, while,
+                double, lock, stackalloc,
+                else, long, static,
+                enum, namespace, string},
+backgroundcolor=\color{backcolour},
+keywordstyle=\color{cyan},
+identifierstyle=\color{red},
+}
+\usepackage{caption}
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFormat{listing}{\colorbox{blue}{\parbox{\textwidth}{\hspace{15pt}#1#2#3}}} %changed \colorbox{8} to \colorbox{blue} cause 8 is not a color!
+\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white, singlelinecheck=false, margin=0pt, font={bf,footnotesize}}
+
+\usepackage{tocloft}
+
+\usepackage{appendix}
+
+\usepackage{mhchem}
+

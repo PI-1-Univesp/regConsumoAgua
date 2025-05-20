@@ -1,0 +1,140 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.7 }
+
+\bibitem[ABNT 2017]{NBR12218}
+\abntrefinfo{ABNT}{ABNT}{2017}
+{ABNT. \textbf{NBR 12218}: Projeto de rede de distribuição de água para
+  abastecimento público - procedimento.
+[S.l.], 2017. 23~p.}
+
+\bibitem[Booch, Rumbaugh e Jacobson 2006]{umlGuia}
+\abntrefinfo{Booch, Rumbaugh e Jacobson}{Booch; Rumbaugh; Jacobson}{2006}
+{BOOCH, G.; RUMBAUGH, J.; JACOBSON, I. \textbf{Uml - Guia do Usuário}. 2. ed.
+  [S.l.]: GEN LTC, 2006. 552~p.
+ISBN 978-8535217841.}
+
+\bibitem[{Bootstrap Team} 2021]{bootstrap}
+\abntrefinfo{{Bootstrap Team}}{{Bootstrap Team}}{2021}
+{{Bootstrap Team}. \textbf{Bootstrap 5.0 documentation}. 2021.
+Dispon{\'\i}vel em:
+  \url{https://getbootstrap.com/docs/5.0/getting-started/introduction/}. Acesso
+  em: 09 mar 2025.}
+
+\bibitem[Brasil 2007]{LeiSaneamento}
+\abntrefinfo{Brasil}{Brasil}{2007}
+{BRASIL. Lei n\ele{ }11.445 de 5 de janeiro de 2007.
+\textbf{Diário Oficial da República Federativa do Brasil}, Brasília, DF,
+  p.~3, 2007.
+ISSN 1677-2339.
+Dispon{\'\i}vel em:
+  \url{https://www.planalto.gov.br/ccivil\_03/\_ato2007-2010/2007/lei/l11445.htm}.
+  Acesso em: 25 mar 2025.}
+
+\bibitem[Brasil 2012]{LeiPolNacRecHidricos}
+\abntrefinfo{Brasil}{Brasil}{2012}
+{\underline{\ \ \ \ \ \ \ \ }. Lei n\ele{ }9.433 de 8 de janeiro de 1997.
+\textbf{Diário Oficial da República Federativa do Brasil}, Brasília, DF,
+  p.~470, 2012.
+ISSN 1677-2339.
+Dispon{\'\i}vel em:
+  \url{https://www.planalto.gov.br/ccivil\_03/leis/l9433.htm}. Acesso em: 25
+  mar 2025.}
+
+\bibitem[Brasil 2017]{PortCons5}
+\abntrefinfo{Brasil}{Brasil}{2017}
+{\underline{\ \ \ \ \ \ \ \ }. Portaria de consolidação n\ele{ }5, de 28 de
+  setembro de 2017.
+\textbf{Diário Oficial da República Federativa do Brasil}, Brasília, DF,
+  2017.
+ISSN 1677-2339.
+Dispon{\'\i}vel em:
+  \url{https://www.planalto.gov.br/ccivil\_03/leis/l9433.htm}. Acesso em: 25
+  mar 2025.}
+
+\bibitem[Date 2004]{dateBD}
+\abntrefinfo{Date}{Date}{2004}
+{DATE, C.~J. \textbf{Introdução a Sistemas de Bancos de Dados}. 8. ed.
+  [S.l.]: GEN LTC, 2004. 896~p.
+ISBN 978-8535212730.}
+
+\bibitem[Fowler 2005]{fowler}
+\abntrefinfo{Fowler}{Fowler}{2005}
+{FOWLER, M. \textbf{UML Essencial}: Um breve guia para a linguagem padrão de
+  modelagem de objetos. 3. ed. [S.l.]: Bookman, 2005. 160~p.
+ISBN 9788536304540.}
+
+\bibitem[FUNASA 2016]{AbastAguaPotavel}
+\abntrefinfo{FUNASA}{FUNASA}{2016}
+{FUNASA. \textbf{Abastecimento de Água Potável - Cadernos Temáticos de
+  Saneamento Básico}. Minitério da Saúde, 2016. Dispon{\'\i}vel em:
+  \url{http://www.funasa.gov.br/documents/20182/300120/Abastecimento+de+\%C3\%81gua+Pot\%C3\%A1vel.pdf/c42e2752-7de2-4a0b-a751-fa352f1bdbc3?version=1.0}.
+  Acesso em: 25 mar 2025.}
+
+\bibitem[FUNASA 2019]{ManualSaneamento}
+\abntrefinfo{FUNASA}{FUNASA}{2019}
+{\underline{\ \ \ \ \ \ \ \ }. \textbf{Manual de Saneamento}. 5. ed. Minitério
+  da Saúde, 2019. Dispon{\'\i}vel em:
+  \url{https://repositorio.funasa.gov.br/bitstream/handle/123456789/506/Manual\_de\_Saneamento\_Funasa\_5a\_Edicao.pdf?sequence=1&isAllowed=y}.
+  Acesso em: 25 mar 2025.}
+
+\bibitem[Garrett 2010]{garret}
+\abntrefinfo{Garrett}{Garrett}{2010}
+{GARRETT, J.~J. \textbf{The Elements of User Experience}: User-centered design
+  for the web and beyond. 2. ed. [S.l.]: New Riders, 2010. 192~p.
+ISBN 978-0321683687.}
+
+\bibitem[Heuser 2024]{heuser}
+\abntrefinfo{Heuser}{Heuser}{2024}
+{HEUSER, C.~A. \textbf{Projeto de Banco de Dados}. 7. ed. [S.l.]: Clube de
+  Autores, 2024. 364~p.
+ISBN 9786501222103.}
+
+\bibitem[IBGE 2024]{IBGE_Mairipora_2024}
+\abntrefinfo{IBGE}{IBGE}{2024}
+{IBGE. \textbf{IBGE | Cidades@ | S\~ao Paulo | Mairipor\~a | Panorama}. 2024.
+Dispon{\'\i}vel em:
+  \url{https://cidades.ibge.gov.br/brasil/sp/mairipora/panorama}. Acesso em: 09
+  mar 2025.}
+
+\bibitem[Larman 2007]{larman}
+\abntrefinfo{Larman}{Larman}{2007}
+{LARMAN, C. \textbf{Utilizando UML e Padrões}: Uma introdução à análise e
+  ao projeto orientados a objetos e ao desenvolvimento iterativo. 3. ed.
+  [S.l.]: Bookman, 2007. 696~p.
+ISBN 978-8560031528.}
+
+\bibitem[MCID 2023]{MCID_DiagTem2023}
+\abntrefinfo{MCID}{MCID}{2023}
+{MCID. \textbf{Diagnóstico Temático - Serviços de Água e Esgoto - Visão
+  Geral - ano de referência: 2022}.
+[S.l.], 2023. Dispon{\'\i}vel em:
+  \url{https://www.gov.br/cidades/pt-br/acesso-a-informacao/acoes-e-programas/saneamento/snis/produtos-do-snis/diagnosticos/DIAGNOSTICO\_TEMATICO\_VISAO\_GERAL\_AE\_SNIS\_2023.pdf}.
+  Acesso em: 25 mar 2025.}
+
+\bibitem[{PMM} 2021]{MairiporaEstanciaTuristica}
+\abntrefinfo{{PMM}}{{PMM}}{2021}
+{{PMM}. \textbf{Justificativa Mairiporã Estância Turística}.
+[S.l.], 2021.}
+
+\bibitem[{PMM} 2022]{RelSinteseMairipora2022}
+\abntrefinfo{{PMM}}{{PMM}}{2022}
+{\underline{\ \ \ \ \ \ \ \ }. \textbf{Relatório Síntese - Município:
+  Mairipor\~a - Bloco 02 - UGRHI 06}.
+[S.l.], 2022. Dispon{\'\i}vel em: \url{http://mairipora.sp.gov.br/}.}
+
+\bibitem[Sommerville 2019]{sommerville}
+\abntrefinfo{Sommerville}{Sommerville}{2019}
+{SOMMERVILLE, I. \textbf{Engenharia de Software}. 10. ed. [S.l.]: Pearson,
+  2019. 768~p.
+ISBN 978-8543024974.}
+
+\bibitem[Walls 2016]{walls}
+\abntrefinfo{Walls}{Walls}{2016}
+{WALLS, C. \textbf{Spring Boot in Action}. 1. ed. [S.l.]: Manning, 2016. 264~p.
+ISBN 978-1617292545.}
+
+\end{thebibliography}

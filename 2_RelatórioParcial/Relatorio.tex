@@ -1,0 +1,133 @@
+\documentclass[
+    12pt, % Tamanho da fonte
+    openright, % Capítulos começam em pág. ímpar (insere página vazia caso preciso)
+    oneside, % Para impressão somente verso. Oposto a impressão em verso e anverso
+    a4paper, % Tamanho do papel
+    chapter=TITLE,
+    english, % Idioma adicional para hifenização
+    french, % Idioma adicional para hifenização
+    spanish, % Idioma adicional para hifenização
+    brazil, % o último idioma é o principal do documento
+    sumario=tradicional
+]{abntex2}
+
+%Mute warinings 44: User Regex
+% chktex-file 44
+% chktex-file 1
+% chktex-file 2
+% chktex-file 8
+% chktex-file 13
+% chktex-file 12
+
+\usepackage{abntex2-univesp}
+
+\usepackage{import}
+\usepackage{parskip}
+\usepackage{xcolor}
+
+
+% \newcommand{\ele}{\raise1ex\hbox{\underbar{\scriptsize o}}}
+% \newcommand{\ela}{\raise1ex\hbox{\underbar{\scriptsize a}}}
+
+%%Espaçamento
+    \setlength{\parskip}{1.5\onelineskip} 
+    \DoubleSpacing
+    % \linespread{1.38}
+    \setcounter{secnumdepth}{1}
+    \newcolumntype{L}{ >{\raggedright\arraybackslash}X}
+
+
+
+
+%%Dados do trabalho
+    \titulo{Software com Interface Web para Administração e Publicação de Dados em Sistemas Alternativos Coletivos de Abastecimento de Água}
+    \autor{
+        Caio Gabriel Alves, RA 2227737 \\
+        Carlos Magno da Silva Cavalcante, RA 23200994\\
+        Douglas Silva Alves, RA 23100612\\
+        João Matias Santos, RA 1401339\\
+        Matheus Augusto Matias Santos, RA 23201364\\
+        Robert Carvalho Sant'Ana, RA 23201472
+    }
+    \local{Ferraz de Vasconcelos, Francisco Morato, Mairiporã, Vargem Grande Paulista - SP}
+    \data{Abril, 2025}
+
+
+    \instituicao{Universidade Virtual do Estado de São Paulo}
+    \tipotrabalho{Projeto Integrador I \- Relatório Parcial}
+
+    \preambulo{Relatório Técnico-Científico apresentado na disciplina de Projeto Integrador I para os cursos de Bacharelado em Tecnologia da Informação, Bacharelado em Ciência de Dados e Engenharia da Computação da Universidade Virtual do Estado de São Paulo (UNIVESP).}
+
+    \orientador[Tutora]{Profa. Stefania Fraga Mendes}
+    
+    \tipotrabalho{Relatório Técnico-Científico}
+
+
+% compila o indice
+% ---
+\makeindex
+
+\begin{document}
+    
+    % Elementos pré-textuais
+    \pretextual
+    \imprimircapa
+    \imprimirfolhaderosto*
+    % \folhaderostocontent
+
+    
+
+    \cleardoublepage    
+    % ---
+    %%Resumo e ficha catalográfica
+    \include{pretextResumo}
+
+    \pdfbookmark[0]{\listfigurename}{lof}
+    \listoffigures*
+    \cleardoublepage
+
+    \pdfbookmark[0]{\listtablename}{lot}
+    \listoftables*
+    \cleardoublepage
+
+    \begin{siglas}
+        \item[ARSESP]   Agência Reguladora de Serviços do Estado de São Paulo
+        \item[ABNT]     Associação Brasileira de Normas Técnicas
+        \item[CETESB]   Companhia Ambiental do Estado de Sãõ Paulo
+        \item[DER]      Diagrama de Entidades e Relacionamentos 
+        \item[FUNASA]   Fundação Nacional de Saúde 
+        \item[GESP]     Governo do Estado de São Paulo
+        \item[IBGE]     Instituto Brasileiro de Geografia e Estatística
+        \item[MCID]     Ministério das Cidades
+        \item[MER]      Modelo de Entidades e Relacionamentos 
+        \item[MS]       Ministério da Saúde 
+        \item[ONU]      Organização das Nações Unidas 
+        \item[PMM]      Prefeitura do Município de Mairiporã
+        \item[PUC-SP]   Pontifícia Universidade Católica de São Paulo 
+        \item[SABESP]   Companhia de Saneamento Básico do Estado de São Paulo
+        \item[UNIVESP]  Universidade Virtual do Estado de São Paulo
+        \item[UML]      Unified Modeling Language 
+        
+    \end{siglas}
+
+
+% RESUMO
+% ---
+
+    
+    
+    \tableofcontents*
+    % Elementos textuais
+    \textual
+
+    \include{textual/chap1-Introducao}
+
+    \include{textual/chap2-Desenvolvimento}
+    
+
+    % Elementos pós-textuais
+    \postextual
+
+    \bibliography{RelatorioParcial}
+
+\end{document}
