@@ -1,7 +1,4 @@
 # regConsumoAgua
-regConsumoAgua
-
-# Nome do projeto
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/iuricode/README-template?style=for-the-badge)
 ![GitHub language count](https://img.shields.io/github/languages/count/iuricode/README-template?style=for-the-badge)
@@ -11,11 +8,18 @@ regConsumoAgua
 
 <img src="logo_univesp.png" alt="Logo Univesp"> <img src="logoPI.png" alt="Logo PI">
 
-> Este é o repositório do Projeto Integrador I da Univesp, elaborado por Caio G. Alves, Carlos M. S. Cavalcante, Douglas S. Alves, João M. Santos, Matheus A. M. Santos e Robert C. Sant'Ana. O projeto versa sobre Linha adicional de texto informativo sobre o que o projeto faz. Sua introdução deve ter cerca de 2 ou 3 linhas. Não exagere, as pessoas não vão ler.
+> Este é o repositório do Projeto Integrador I da Univesp, elaborado por Caio G. Alves, Carlos M. S. Cavalcante, Douglas S. Alves, João M. Santos, Matheus A. M. Santos e Robert C. Sant'Ana.
 
-### Ajustes e melhorias
+### Objetivo
 
-O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas para as seguintes tarefas:
+O objetivo deste projeto é o desenvolvimento de um software com interface web destinado à administração e publicação de dados em sistemas alternativos coletivos de abastecimento de água. O sistema foi projetado para auxiliar na gestão do volume de água captado e distribuído, fornecendo um registro histórico dos volumes para a administração da associação de bairro e seus moradores. O desenvolvimento teve como base a comunidade Recanto do Céu Azul em Mairiporã, SP, e utilizou o ciclo ouvir e interpretar; criar e prototipar; e implementar e testar como paradigma de implementação. A ferramenta visa minimizar os problemas decorrentes da escassez de água e otimizar a administração desses sistemas.
+
+
+
+
+
+
+<!--O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas para as seguintes tarefas:
 
 - [x] Tarefa 1
 - [x] Tarefa 2
@@ -108,4 +112,4 @@ Quer fazer parte desse projeto? Clique [AQUI](CONTRIBUTING.md) e leia como contr
 
 ## 📝 Licença
 
-Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE.md) para mais detalhes.
+Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE.md) para mais detalhes.-->
