@@ -17,9 +17,9 @@ O objetivo deste projeto é o desenvolvimento de um software com interface web d
 
 ## Conteúdo do repositório
 
-([./2_RelatorioParcial](https://github.com/PI-1-Univesp/regConsumoAgua/tree/main/2_Relat%C3%B3rioParcial)): Código-fonte do Relatório Final, produzido em LaTex, assim como os arquivos auxiliares.
+[./2_RelatorioParcial](https://github.com/PI-1-Univesp/regConsumoAgua/tree/main/2_Relat%C3%B3rioParcial): Código-fonte do Relatório Final, produzido em LaTex, assim como os arquivos auxiliares.
 
-[PIM-I-main](./PIM-I-main): Código-fonte da aplicação regConsumoAgua.
+[[PIM-I-main](./PIM-I-main)](https://github.com/PI-1-Univesp/regConsumoAgua/tree/main/PIM-I-main): Código-fonte da aplicação regConsumoAgua.
 
 
 
