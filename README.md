@@ -15,7 +15,11 @@
 O objetivo deste projeto é o desenvolvimento de um software com interface web destinado à administração e publicação de dados em sistemas alternativos coletivos de abastecimento de água. O sistema foi projetado para auxiliar na gestão do volume de água captado e distribuído, fornecendo um registro histórico dos volumes para a administração da associação de bairro e seus moradores. O desenvolvimento teve como base a comunidade Recanto do Céu Azul em Mairiporã, SP, e utilizou o ciclo ouvir e interpretar; criar e prototipar; e implementar e testar como paradigma de implementação. A ferramenta visa minimizar os problemas decorrentes da escassez de água e otimizar a administração desses sistemas.
 
 
+## Conteúdo do repositório
 
+[2_RelatórioParcial](/2_RelatorioParcial): Código-fonte do Relatório Final, produzido em LaTex, assim como os arquivos auxiliares.
+
+[PIM-I-main](/PIM-I-main): Código-fonte da aplicação regConsumoAgua.
 
 
 
