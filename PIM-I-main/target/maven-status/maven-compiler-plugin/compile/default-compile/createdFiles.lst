@@ -1,0 +1,5 @@
+com/caiogabrielalves/waterbackend/repository/ConsumoRepository.class
+com/caiogabrielalves/waterbackend/WaterbackendApplication.class
+com/caiogabrielalves/waterbackend/model/Consumo.class
+com/caiogabrielalves/waterbackend/service/ConsumoService.class
+com/caiogabrielalves/waterbackend/controller/ConsumoController.class
